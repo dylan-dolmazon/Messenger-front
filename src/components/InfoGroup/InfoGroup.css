@@ -1,0 +1,43 @@
+.information-group-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.information-group-header .avatar {
+    width: 150px;
+    height: 150px;
+    line-height: 75px;
+    font-size: 75px;
+    font-weight: bold;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-group-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.information-group-body table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.information-group-body td,
+th {
+    text-align: center;
+    padding: 8px;
+}
+
+.information-group-body tr:nth-child(even) {
+    background-color: #dddddd;
+}

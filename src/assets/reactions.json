@@ -1,0 +1,22 @@
+[
+    {
+        "key": "HEART", 
+        "iconClass": "heart",
+        "label": "Aimer"
+    },
+    {
+        "key": "THUMB", 
+        "iconClass": "thumbs up",
+        "label": "Pouce en l'air"
+    },
+    {
+        "key": "HAPPY", 
+        "iconClass": "smile",
+        "label": "Content"
+    },
+    {
+        "key": "SAD", 
+        "iconClass": "frown",
+        "label": "Pas content"
+    }
+]

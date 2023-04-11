@@ -1,0 +1,164 @@
+.message {
+    color: black;
+    padding: 2.5px 0;
+    display: flex;
+}
+
+.message img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 10px;
+    align-self: end;
+}
+
+.bubble {
+    margin-left: 42px;
+}
+
+img + .bubble {
+    margin-left: 0;
+}
+
+.bubble {
+    background: #f1f0f0;
+    padding: 6px 16px;
+    border-radius: 16px;
+}
+
+.bubble.top.bottom {
+    border-radius: 16px !important;
+}
+
+.mine {
+    justify-content: end;
+    flex-direction: row-reverse;
+}
+
+.mine .bubble {
+    color: white;
+    background: #0099ff;
+}
+
+.mine .red {
+    background: #ff2f2f;
+}
+
+.mine .rainbow {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
+.message.mine .top.bubble {
+    border-bottom-right-radius: 0;
+}
+
+.message.mine .middle.bubble {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.message.mine .bottom.bubble {
+    border-top-right-radius: 0;
+}
+
+.message:not(.mine) .top.bubble {
+    border-bottom-left-radius: 0;
+}
+
+.message:not(.mine) .middle.bubble {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.message:not(.mine) .bottom.bubble {
+    border-top-left-radius: 0;
+}
+
+.message .controls {
+    align-items: center;
+    min-width: 190px;
+    display: none;
+}
+
+.message .reacts {
+    align-items: center;
+    min-width: 190px;
+    display: flex;
+}
+
+.mine .reacts {
+    justify-content: flex-end;
+}
+
+.message:hover .controls {
+    display: flex;
+}
+
+.message:hover .reacts {
+    display: none;
+}
+
+.message .reacts span {
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 0 2px;
+    padding: 0 4px;
+}
+
+.message i {
+    cursor: pointer;
+}
+
+.controls i {
+    margin: 0 0 0 10px;
+    padding: 5px !important;
+}
+
+.message.mine .bubble {
+    margin-left: 0;
+}
+
+.message.mine i {
+    margin: 0 10px 0 0;
+}
+
+.mine .controls {
+    justify-content: flex-end;
+}
+
+.react * {
+    transition: opacity 0.3s;
+    opacity: 0 !important;
+}
+
+.react .heart {
+    opacity: 1 !important;
+}
+
+.message:hover * {
+    opacity: 1 !important;
+}
+
+.reply_content {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-size: 80%;
+}
+
+.message .message-deleted {
+    font-style: italic;
+}
